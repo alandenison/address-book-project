@@ -12,6 +12,10 @@ This program should take a users names and display them
   input: Alan Denison
   output: Alan Denison
 
+This program should list all entries
+  input : alan, donald
+  output: alan, donald
+
 This program should have a clear button that deletes previous entries
   input: clear
   output: names cleared

@@ -1,0 +1,10 @@
+<h1>Contact List</h1>
+<ul>
+  @foreach (var contact in Model)
+  {
+  <li>@contact.GetName()</li>
+  }
+</ul>
+<form action="/contacts_cleared" method="post">
+  <button type="submit" name="button">Clear All Contacts</button>
+</form>
