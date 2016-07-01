@@ -7,7 +7,6 @@ namespace AddressBook
     private string _name;
     private string _address;
     private string _phone;
-    private int _id;
     private static List<Contact> _instances = new List<Contact> {};
 
     public Contact(string name, string address, string phone)
@@ -41,10 +40,6 @@ namespace AddressBook
     public void SetPhone(string newPhone)
     {
       _phone = newPhone;
-    }
-    public int GetId()
-    {
-      return _id;
     }
     public static List<Contact> GetAll()
     {
