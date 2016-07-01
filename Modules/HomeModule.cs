@@ -15,7 +15,7 @@ namespace AddressBook
         return View["/Contact_Form.cshtml"];
       };
       Post["/new-contact"] = _ => {
-        Contact newContact = new Contact(Request.Form["new-name"]);
+        Contact newContact = new Contact(Request.Form["new-name"], Request.Form["new-address"], Request.Form["new-phone"]);
         List<Contact> allContacts = Contact.GetAll();
         return View["Contact_Created.cshtml", newContact];
       };
@@ -27,7 +27,6 @@ namespace AddressBook
         Contact.ClearAll();
         return View["Contacts_Cleared.cshtml"];
       };
-
     }
   }
 }
